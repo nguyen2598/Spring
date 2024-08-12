@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: identity-service
+  datasource:
+    url: "jdbc:mysql://localhost:3306/learn_spring"
+    username: root
+    password: 123456
+#    Cái bên dưới chỉ dùng khi xây sựng và
+#  học chứ thực thì cần tạo các script SQL mới dúng
+  jpa:
+    hibernate:
+      ddl-auto: update
+#      Hiện  để debug
+    show-sql: true
+server:
+  port: 9090
+  servlet:
+    context-path: /identity
+
